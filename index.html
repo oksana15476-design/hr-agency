@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Агентство подбора персонала — Recruit Pro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#" class="logo">
+        <span class="logo__icon">◈</span>
+        <span>Recruit<strong>Pro</strong></span>
+      </a>
+      <nav class="nav__links">
+        <a href="#services">Услуги</a>
+        <a href="#how">Как работаем</a>
+        <a href="#why">О нас</a>
+        <a href="#contact" class="btn btn--outline">Связаться</a>
+      </nav>
+      <button class="nav__burger" aria-label="Меню" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#services" onclick="toggleMenu()">Услуги</a>
+      <a href="#how" onclick="toggleMenu()">Как работаем</a>
+      <a href="#why" onclick="toggleMenu()">О нас</a>
+      <a href="#contact" onclick="toggleMenu()">Связаться</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <div class="hero__badge">Агентство подбора персонала</div>
+        <h1 class="hero__title">Находим людей,<br/>которые двигают <em>бизнес вперёд</em></h1>
+        <p class="hero__sub">Помогаем компаниям закрывать вакансии быстро и точно — от массового найма до поиска ключевых специалистов.</p>
+        <div class="hero__cta">
+          <a href="#services" class="btn btn--primary btn--lg">Смотреть услуги</a>
+          <a href="#contact" class="btn btn--ghost btn--lg">Получить консультацию</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__num">500+</span>
+            <span class="stat__label">закрытых вакансий</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__num">8 лет</span>
+            <span class="stat__label">на рынке</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__num">97%</span>
+            <span class="stat__label">довольных клиентов</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__card hero__card--1">
+          <div class="card-avatar card-avatar--blue">АК</div>
+          <div>
+            <p class="card-name">Анна Козлова</p>
+            <p class="card-role">Head of Marketing · закрыто за 12 дней</p>
+          </div>
+          <span class="badge badge--green">✓ Принята</span>
+        </div>
+        <div class="hero__card hero__card--2">
+          <div class="card-avatar card-avatar--purple">ДМ</div>
+          <div>
+            <p class="card-name">Дмитрий Михайлов</p>
+            <p class="card-role">Senior Dev · закрыто за 9 дней</p>
+          </div>
+          <span class="badge badge--green">✓ Принят</span>
+        </div>
+        <div class="hero__team-card">
+          <p class="hero__team-label">Массовый найм</p>
+          <div class="hero__avatars">
+            <div class="av av--1">ИП</div>
+            <div class="av av--2">СВ</div>
+            <div class="av av--3">МК</div>
+            <div class="av av--4">ТН</div>
+            <div class="av av--5">+48</div>
+          </div>
+          <p class="hero__team-sub">52 сотрудника · закрыты за 3 недели</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Наши услуги</span>
+        <h2 class="section-title">Два подхода — одна цель:<br/>нужные люди на нужных местах</h2>
+        <p class="section-sub">Выберите формат, который подходит вашему бизнесу</p>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- MASS RECRUITMENT -->
+        <div class="service-card service-card--mass">
+          <div class="service-card__header">
+            <div class="service-icon service-icon--blue">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="7" fill="currentColor" opacity=".25"/>
+                <circle cx="32" cy="16" r="7" fill="currentColor" opacity=".25"/>
+                <path d="M2 38c0-7.732 6.268-14 14-14h16c7.732 0 14 6.268 14 14" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                <circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="3.5" fill="none"/>
+                <circle cx="32" cy="16" r="7" stroke="currentColor" stroke-width="3.5" fill="none"/>
+              </svg>
+            </div>
+            <span class="service-badge service-badge--blue">Массовый подбор</span>
+          </div>
+          <h3 class="service-card__title">Набираем команды<br/>в сжатые сроки</h3>
+          <p class="service-card__desc">Подходит для производств, ритейла, логистики, сервисных центров — когда нужно быстро закрыть десятки однотипных позиций без потери качества.</p>
+          <ul class="service-features">
+            <li>
+              <span class="feature-icon">⚡</span>
+              <span>Запуск процесса за <strong>24 часа</strong> после брифинга</span>
+            </li>
+            <li>
+              <span class="feature-icon">🎯</span>
+              <span>Проводим первичный скрининг и отсев</span>
+            </li>
+            <li>
+              <span class="feature-icon">📋</span>
+              <span>Организуем групповые собеседования</span>
+            </li>
+            <li>
+              <span class="feature-icon">📊</span>
+              <span>Прозрачная отчётность по каждому этапу</span>
+            </li>
+            <li>
+              <span class="feature-icon">🔄</span>
+              <span>Замена кандидатов по гарантии</span>
+            </li>
+          </ul>
+          <div class="service-card__footer">
+            <div class="service-metric">
+              <span class="metric-num">от 3 дней</span>
+              <span class="metric-label">первые кандидаты</span>
+            </div>
+            <div class="service-metric">
+              <span class="metric-num">от 30 чел.</span>
+              <span class="metric-label">минимальная партия</span>
+            </div>
+            <a href="#contact" class="btn btn--primary service-card__btn">Обсудить проект</a>
+          </div>
+        </div>
+
+        <!-- TARGETED RECRUITMENT -->
+        <div class="service-card service-card--targeted">
+          <div class="service-card__header">
+            <div class="service-icon service-icon--purple">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="3.5" fill="none"/>
+                <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="3" fill="none" opacity=".4"/>
+                <circle cx="24" cy="24" r="5" fill="currentColor"/>
+                <line x1="24" y1="4" x2="24" y2="10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <line x1="24" y1="38" x2="24" y2="44" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <line x1="4" y1="24" x2="10" y2="24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <line x1="38" y1="24" x2="44" y2="24" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="service-badge service-badge--purple">Точечный подбор</span>
+          </div>
+          <h3 class="service-card__title">Находим редких<br/>и сильных специалистов</h3>
+          <p class="service-card__desc">Для сложных позиций, где важна экспертиза: руководители, узкие специалисты, технические роли. Глубокий поиск, точное попадание в профиль.</p>
+          <ul class="service-features">
+            <li>
+              <span class="feature-icon">🔍</span>
+              <span>Executive Search и прямой хедхантинг</span>
+            </li>
+            <li>
+              <span class="feature-icon">👤</span>
+              <span>Детальный профиль должности под ваш бизнес</span>
+            </li>
+            <li>
+              <span class="feature-icon">🧠</span>
+              <span>Оценка мотивации, ценностей и soft skills</span>
+            </li>
+            <li>
+              <span class="feature-icon">🤝</span>
+              <span>Персональный менеджер на каждом этапе</span>
+            </li>
+            <li>
+              <span class="feature-icon">🛡️</span>
+              <span>Гарантия замены до 6 месяцев</span>
+            </li>
+          </ul>
+          <div class="service-card__footer">
+            <div class="service-metric">
+              <span class="metric-num">от 14 дней</span>
+              <span class="metric-label">первые кандидаты</span>
+            </div>
+            <div class="service-metric">
+              <span class="metric-num">1–5 позиций</span>
+              <span class="metric-label">в одном проекте</span>
+            </div>
+            <a href="#contact" class="btn btn--primary-purple service-card__btn">Обсудить позицию</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Процесс</span>
+        <h2 class="section-title">Как мы работаем</h2>
+        <p class="section-sub">Прозрачный процесс без лишних шагов</p>
+      </div>
+
+      <div class="how__tabs">
+        <button class="how__tab how__tab--active" onclick="switchTab('mass', this)">Массовый подбор</button>
+        <button class="how__tab" onclick="switchTab('targeted', this)">Точечный подбор</button>
+      </div>
+
+      <div class="how__steps" id="tab-mass">
+        <div class="step">
+          <div class="step__num step__num--blue">01</div>
+          <div class="step__content">
+            <h4>Брифинг и анализ</h4>
+            <p>Разбираем требования к позициям, условия, объём, сроки. Согласовываем критерии за одну встречу.</p>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num step__num--blue">02</div>
+          <div class="step__content">
+            <h4>Поток кандидатов</h4>
+            <p>Запускаем рекламу, обзваниваем базы, используем job-сайты. Поток откликов с первых дней.</p>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num step__num--blue">03</div>
+          <div class="step__content">
+            <h4>Первичный отбор</h4>
+            <p>Проверяем соответствие профилю, проводим скрининг-интервью. К вам идут только подходящие.</p>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num step__num--blue">04</div>
+          <div class="step__content">
+            <h4>Выход на работу</h4>
+            <p>Сопровождаем оффер и онбординг. Гарантийная замена, если кандидат не подошёл.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="how__steps how__steps--hidden" id="tab-targeted">
+        <div class="step">
+          <div class="step__num step__num--purple">01</div>
+          <div class="step__content">
+            <h4>Профиль позиции</h4>
+            <p>Детально изучаем бизнес-контекст, задачи, команду. Формируем точный портрет кандидата.</p>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num step__num--purple">02</div>
+          <div class="step__content">
+            <h4>Прямой поиск</h4>
+            <p>Работаем через LinkedIn, профессиональные сообщества, собственную базу. Выходим на пассивных кандидатов.</p>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num step__num--purple">03</div>
+          <div class="step__content">
+            <h4>Глубокая оценка</h4>
+            <p>Структурированное интервью, проверка рекомендаций, оценка мотивации и культурного fit.</p>
+          </div>
+        </div>
+        <div class="step__arrow">→</div>
+        <div class="step">
+          <div class="step__num step__num--purple">04</div>
+          <div class="step__content">
+            <h4>Сделка и выход</h4>
+            <p>Помогаем с переговорами по офферу. Гарантия замены до 6 месяцев после выхода.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="why__inner">
+        <div class="why__text">
+          <span class="section-tag">Почему мы</span>
+          <h2 class="section-title">Не просто рекрутеры —<br/>ваши партнёры в росте</h2>
+          <p class="section-sub">Мы работаем так, чтобы вы хотели вернуться снова</p>
+          <div class="why__points">
+            <div class="why__point">
+              <div class="why__point-icon">🚀</div>
+              <div>
+                <h4>Скорость без компромиссов</h4>
+                <p>Закрываем вакансии быстро, не снижая планку качества. Работаем с чёткими KPI и дедлайнами.</p>
+              </div>
+            </div>
+            <div class="why__point">
+              <div class="why__point-icon">💬</div>
+              <div>
+                <h4>Открытая коммуникация</h4>
+                <p>Вы всегда знаете, на каком этапе процесс. Никаких «скоро», только конкретные отчёты.</p>
+              </div>
+            </div>
+            <div class="why__point">
+              <div class="why__point-icon">🎓</div>
+              <div>
+                <h4>Экспертиза в отраслях</h4>
+                <p>IT, производство, ритейл, финансы, медицина — в каждой нише свои специалисты-рекрутеры.</p>
+              </div>
+            </div>
+            <div class="why__point">
+              <div class="why__point-icon">🛡️</div>
+              <div>
+                <h4>Гарантия результата</h4>
+                <p>Бесплатная замена кандидата, если он не подошёл — прописано в договоре.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why__stats-panel">
+          <div class="stats-card">
+            <div class="stats-big">500+</div>
+            <div class="stats-desc">успешно закрытых вакансий с 2016 года</div>
+          </div>
+          <div class="stats-row">
+            <div class="stats-item">
+              <div class="stats-num">8</div>
+              <div class="stats-label">лет<br/>на рынке</div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-num">97%</div>
+              <div class="stats-label">клиентов<br/>возвращаются</div>
+            </div>
+            <div class="stats-item">
+              <div class="stats-num">12</div>
+              <div class="stats-label">дней среднее<br/>закрытие</div>
+            </div>
+          </div>
+          <div class="review-card">
+            <p class="review-text">«Закрыли 60 позиций кассиров и продавцов за 2,5 недели. Поток кандидатов был стабильным, качество — выше ожиданий.»</p>
+            <div class="review-author">
+              <div class="review-av">НС</div>
+              <div>
+                <p class="review-name">Наталья Сидорова</p>
+                <p class="review-role">HR Director, RetailChain</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner">
+        <div class="contact__text">
+          <span class="section-tag section-tag--light">Связаться</span>
+          <h2 class="contact__title">Готовы начать?<br/>Напишите нам</h2>
+          <p class="contact__sub">Расскажите о задаче — мы ответим в течение 2 часов в рабочее время и предложим оптимальный формат работы.</p>
+          <div class="contact__info">
+            <a href="tel:+74951234567" class="contact__link">
+              <span>📞</span> +7 (495) 123-45-67
+            </a>
+            <a href="mailto:hello@recruitpro.ru" class="contact__link">
+              <span>✉️</span> hello@recruitpro.ru
+            </a>
+            <div class="contact__link">
+              <span>🕐</span> Пн–Пт, 9:00–18:00
+            </div>
+          </div>
+        </div>
+        <form class="contact__form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ваше имя *</label>
+              <input type="text" id="name" name="name" placeholder="Иван Петров" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Компания</label>
+              <input type="text" id="company" name="company" placeholder="ООО «Название»" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Телефон *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="ivan@company.ru" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Тип услуги</label>
+            <div class="form-toggle">
+              <label class="toggle-option">
+                <input type="radio" name="service" value="mass" checked />
+                <span>Массовый подбор</span>
+              </label>
+              <label class="toggle-option">
+                <input type="radio" name="service" value="targeted" />
+                <span>Точечный подбор</span>
+              </label>
+              <label class="toggle-option">
+                <input type="radio" name="service" value="both" />
+                <span>Оба варианта</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Расскажите о задаче</label>
+            <textarea id="message" name="message" rows="4" placeholder="Какие позиции, сколько человек, сроки..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки данных</a></p>
+          <div class="form-success" id="formSuccess">
+            ✓ Заявка отправлена! Свяжемся с вами в течение 2 часов.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo">
+          <span class="logo__icon">◈</span>
+          <span>Recruit<strong>Pro</strong></span>
+        </a>
+        <p>Профессиональный подбор персонала для бизнеса любого масштаба</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h5>Услуги</h5>
+          <a href="#services">Массовый подбор</a>
+          <a href="#services">Точечный подбор</a>
+        </div>
+        <div class="footer__col">
+          <h5>Компания</h5>
+          <a href="#why">О нас</a>
+          <a href="#how">Как работаем</a>
+          <a href="#contact">Контакты</a>
+        </div>
+        <div class="footer__col">
+          <h5>Контакты</h5>
+          <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+          <a href="mailto:hello@recruitpro.ru">hello@recruitpro.ru</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2024 RecruitPro. Все права защищены.</p>
+        <a href="#">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
